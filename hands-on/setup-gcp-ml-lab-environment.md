@@ -1,6 +1,13 @@
 # Setup GCP ML
 
-## Install packages
+## VM Configuration
+```
+16 GB RAM
+8 Core CPU
+SSD Disk
+```
+
+## Install packages on Ubuntu
 ```
 sudo apt-get update -y
 sudo apt-get install apt-transport-https ca-certificates gnupg curl sudo -y
@@ -22,14 +29,24 @@ sudo apt-get update
 sudo snap install google-cloud-cli
 ```
 
+### Authenticate to GCP
+
 ```
 gcloud init
 ```
 
+## Install Python
 ```
-pip uninstall -y google.cloud.storage
+sudo apt install -y python3.10-venv python3-pip
+sudo mkdir -p /pyenv
+sudo chmod -R 777 /pyenv
+python3 -m venv /pyenv
+source /pyenv/bin/activate
+sudo mkdir -p /workdir
+sudo chmod -R 777 /workdir
 ```
 
+### Install packes in Python
 ```
 pip install google.cloud.storage
 ```
@@ -80,4 +97,11 @@ pip install matplotlib
 
 ```
 pip install db-dtypes
+```
+
+### Setup Jupyter Notebook
+```
+cd /workdir
+pip install jupyter
+nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 ```
