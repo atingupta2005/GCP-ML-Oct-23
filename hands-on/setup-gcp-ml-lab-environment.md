@@ -99,6 +99,11 @@ pip install matplotlib
 pip install db-dtypes
 ```
 
+### Close Git Repo
+```
+git clone https://github.com/atingupta2005/GCP-ML-Oct-23
+```
+
 ### Setup Jupyter Notebook
 ```
 cd /workdir
