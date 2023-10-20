@@ -51,6 +51,7 @@ sudo snap install google-cloud-cli
 
 ```
 gcloud init
+gcloud auth application-default login
 ```
 
 ## Install Python
