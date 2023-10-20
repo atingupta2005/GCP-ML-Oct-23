@@ -7,6 +7,29 @@
 SSD Disk
 ```
 
+## Install packages
+```
+sudo apt update
+sudo apt install -y tree zip vim nano ranger net-tools iputils-ping p7zip-full
+```
+
+## Install Python
+```
+sudo apt update
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install -y python3.10-venv python3-pip
+sudo mkdir -p /pyenv
+sudo chmod -R 777 /pyenv
+python3 -m venv /pyenv
+source /pyenv/bin/activate
+sudo mkdir -p /workdir
+sudo chmod -R 777 /workdir
+cd /workdir
+pip install jupyter
+nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
+```
+
+
 ## Install packages on Ubuntu
 ```
 sudo apt-get update -y
