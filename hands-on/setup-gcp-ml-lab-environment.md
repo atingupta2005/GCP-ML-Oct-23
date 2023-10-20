@@ -117,6 +117,13 @@ git clone https://github.com/atingupta2005/GCP-ML-Oct-23
 ```
 cd /workdir
 pip install jupyter
-nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 tail nohup.out
+```
+
+
+
+## How to start
+```
+source /pyenv/bin/activate
+nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 ```
