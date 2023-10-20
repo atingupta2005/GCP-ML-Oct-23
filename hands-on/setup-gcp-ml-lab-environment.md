@@ -7,11 +7,6 @@
 SSD Disk
 ```
 
-## Install packages
-```
-sudo apt update
-sudo apt install -y tree zip vim nano ranger net-tools iputils-ping p7zip-full
-```
 
 ## Install Python
 ```
@@ -32,7 +27,7 @@ nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 
 ## Install packages on Ubuntu
 ```
-sudo apt-get update -y
+sudo apt install -y tree zip vim nano ranger net-tools iputils-ping p7zip-full
 sudo apt-get install apt-transport-https ca-certificates gnupg curl sudo -y
 ```
 
