@@ -44,7 +44,7 @@ sudo apt-get update
 ```
 
 ```
-sudo snap install google-cloud-cli
+sudo snap install google-cloud-cli --classic
 ```
 
 ### Authenticate to GCP
