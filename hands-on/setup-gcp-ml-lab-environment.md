@@ -54,19 +54,9 @@ gcloud init
 gcloud auth application-default login
 ```
 
-## Install Python
+### Install packages in Python
 ```
-sudo apt install -y python3.10-venv python3-pip
-sudo mkdir -p /pyenv
-sudo chmod -R 777 /pyenv
-python3 -m venv /pyenv
 source /pyenv/bin/activate
-sudo mkdir -p /workdir
-sudo chmod -R 777 /workdir
-```
-
-### Install packes in Python
-```
 pip install google.cloud.storage
 ```
 
