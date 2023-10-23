@@ -13,6 +13,7 @@ SSD Disk
 sudo apt update
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install -y python3.10-venv python3-pip
+sudo apt install unzip
 sudo mkdir -p /pyenv
 sudo chmod -R 777 /pyenv
 python3 -m venv /pyenv
@@ -50,9 +51,14 @@ sudo snap install google-cloud-cli --classic
 ### Authenticate to GCP
 
 ```
+sudo rm -rf ~/.gsutil
+sudo rm -rf ~/.config/gcloud
+git pull
+sudo apt install unzip 
+unzip -n fifth-sprite-402605-f2105f411b52.zip
+gcloud auth login --cred-file=fifth-sprite-402605-f2105f411b52.json
 gcloud init --console-only
 gcloud auth application-default login
-gcloud auth login --no-browser
 gcloud config set project PROJECT_ID
 gcloud auth list
 ```
@@ -110,6 +116,10 @@ pip install matplotlib
 
 ```
 pip install db-dtypes
+```
+
+```
+pip install tensorflow==2.10.0 tensorflow-io==0.27.0
 ```
 
 ### Close Git Repo
