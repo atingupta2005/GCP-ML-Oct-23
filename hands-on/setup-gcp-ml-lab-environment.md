@@ -149,4 +149,4 @@ tail nohup.out
 ```
 
 - Now open browser in your laptop and hit below URL:
-  -  https://<public-ip-address>:8888
+  -  https://public-ip-address:8888
