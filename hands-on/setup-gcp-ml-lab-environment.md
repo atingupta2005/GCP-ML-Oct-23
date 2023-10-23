@@ -50,10 +50,11 @@ sudo snap install google-cloud-cli --classic
 ### Authenticate to GCP
 
 ```
-gcloud init
+gcloud init --console-only
 gcloud auth application-default login
-gcloud auth login
+gcloud auth login --no-browser
 gcloud config set project PROJECT_ID
+gcloud auth list
 ```
 
 ### Install packages in Python
@@ -84,6 +85,7 @@ pip install pandas
 
 ```
 pip install scikit-learn
+pip install seaborn
 ```
 
 ```
