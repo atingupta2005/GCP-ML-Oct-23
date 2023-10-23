@@ -123,7 +123,14 @@ tail nohup.out
 
 
 ## How to start
+- Open Powershell and run below commandsL
+
 ```
+ssh gcpuser@<public-ip-address>
 source /pyenv/bin/activate
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
+tail nohup.out
 ```
+
+- Now open browser in your laptop and hit below URL:
+  -  https://<public-ip-address>:8888
