@@ -55,6 +55,7 @@ sudo rm -rf ~/.gsutil
 sudo rm -rf ~/.config/gcloud
 git pull
 sudo apt install unzip 
+cd /workdir/GCP-ML-Oct-23/
 unzip -n fifth-sprite-402605-f2105f411b52.zip
 gcloud auth login --cred-file=fifth-sprite-402605-f2105f411b52.json
 gcloud init --console-only
@@ -143,6 +144,8 @@ tail nohup.out
 ssh gcpuser@<public-ip-address>
 source /pyenv/bin/activate
 cd /workdir/
+rm -rf /workdir/GCP-ML-Oct-23/
+git clone https://github.com/atingupta2005/GCP-ML-Oct-23
 pkill -f jupyter
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 tail nohup.out
