@@ -55,6 +55,7 @@ sudo rm -rf ~/.gsutil
 sudo rm -rf ~/.config/gcloud
 git pull
 sudo apt install unzip 
+cd /workdir/GCP-ML-Oct-23/
 unzip -n fifth-sprite-402605-f2105f411b52.zip
 gcloud auth login --cred-file=fifth-sprite-402605-f2105f411b52.json
 gcloud init --console-only
