@@ -52,6 +52,8 @@ sudo snap install google-cloud-cli --classic
 ```
 gcloud init
 gcloud auth application-default login
+gcloud auth login
+gcloud config set project PROJECT_ID
 ```
 
 ### Install packages in Python
@@ -128,8 +130,8 @@ tail nohup.out
 ```
 ssh gcpuser@<public-ip-address>
 source /pyenv/bin/activate
+cd /workdir/
 pkill -f jupyter
-cd /working
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 tail nohup.out
 ```
