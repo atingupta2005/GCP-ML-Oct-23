@@ -143,6 +143,8 @@ tail nohup.out
 ssh gcpuser@<public-ip-address>
 source /pyenv/bin/activate
 cd /workdir/
+rm -rf /workdir/GCP-ML-Oct-23/
+git clone https://github.com/atingupta2005/GCP-ML-Oct-23
 pkill -f jupyter
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 tail nohup.out
