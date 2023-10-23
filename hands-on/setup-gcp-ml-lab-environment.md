@@ -128,6 +128,8 @@ tail nohup.out
 ```
 ssh gcpuser@<public-ip-address>
 source /pyenv/bin/activate
+pkill -f jupyter
+cd /working
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 tail nohup.out
 ```
