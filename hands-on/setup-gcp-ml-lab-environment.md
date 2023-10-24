@@ -23,6 +23,7 @@ sudo chmod -R 777 /workdir
 cd /workdir
 pip install pydot
 pip install jupyter
+pip install avro
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 ```
 
