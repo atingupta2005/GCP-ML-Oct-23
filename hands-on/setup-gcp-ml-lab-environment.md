@@ -13,7 +13,7 @@ SSD Disk
 sudo apt update
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install -y python3.10-venv python3-pip
-sudo apt install unzip
+sudo apt install unzip graphviz
 sudo mkdir -p /pyenv
 sudo chmod -R 777 /pyenv
 python3 -m venv /pyenv
@@ -21,6 +21,7 @@ source /pyenv/bin/activate
 sudo mkdir -p /workdir
 sudo chmod -R 777 /workdir
 cd /workdir
+pip install pydot
 pip install jupyter
 nohup jupyter notebook --ip 0.0.0.0 --port 8888 &
 ```
